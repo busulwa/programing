@@ -14,10 +14,12 @@ public class CalculateArea {
 
         Scanner myScanner = new Scanner(System.in); //scanner for user input
 
-        System.out.println("Introduce your name");
+        System.out.println("Introduce your self");
         String name = myScanner.nextLine().toUpperCase();//introduced a String and converted it to Upper Case
-        System.out.println(" Your are welcome:" + name);
-
+        System.out.println(" Your are welcome:\t" + name);
+  //for(name.){
+  //  System.out.println("no");
+ // }
         System.out.println("Enter value for Length of the Triangle in cm: ");
         int l = myScanner.nextInt(); // taking the value of the length
         System.out.println("Enter value for width of the Triangle in cm: ");
