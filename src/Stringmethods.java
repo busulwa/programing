@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Stringmethods {
 
-    static int mymethod(int l, int w)
+    static int myMethod(int l, int w)
     {
         return l*w;
     }
@@ -11,7 +11,6 @@ public class Stringmethods {
 
 
         //method to calculate the area of my houses
-
 
         Scanner newscanner = new Scanner(System.in);
         // String to catch my house name
@@ -23,27 +22,32 @@ public class Stringmethods {
         myhouse = newscanner.nextLine().toUpperCase();
         System.out.println("Your House is a\t" + myhouse);
 
-/*
+
         System.out.println("Enter Length \t");
         int l = newscanner.nextInt();
         System.out.println("Enter Width \t");
               int w= newscanner.nextInt();
-        int houseare =  mymethod(l,w);
-        System.out.println("Area of my house  is  = \t" + (double)houseare+"cm\n");
 
+        int houseare =  myMethod(l,w);
+        System.out.println("Area of my house  is = \t" + (double)houseare+"cm");
+        newscanner.nextLine();
+if (houseare>100.0) {
+    // String to catch the name of my Car
+    System.out.println("Your can now buy a Car\t");
+    System.out.println("Enter name of car you want to buy");
+    String MyCar = new String();
 
-*/
-        System.out.println("Enter name of car");
-       // String to catch the name of my Car
-        String MyCar = "BMW";
-        // catches the name of the Car and changes it to uppercase
-     MyCar = newscanner.nextLine().toUpperCase();
-        // Displays the name of house  and length of the string
-     System.out.println("** My Car is a " + MyCar + "\nthe string  length is "+MyCar.length());
+    // catches the name of the Car and changes it to uppercase
+    MyCar = newscanner.nextLine().toUpperCase();
+    // Displays the name of house  and length of the string
+    System.out.println("** My Car is a " + MyCar + "\nthe string  length is " + MyCar.length());
 
-     System.out.println("** MY house is\t"+ myhouse +"\tand my car is " +MyCar);
+    System.out.println("** MY house is\t" + myhouse + "\tand my car is " + MyCar);
+}else {
 
-        // Condition statement to check if my house is Flat
+    System.out.println("You can not buy a Car");
+}
+ // Condition statement to check if my house is Flat
         // boolean xy= false;
 
     if(myhouse.equals("FLAT")){
@@ -56,6 +60,8 @@ public class Stringmethods {
         // System.out.println(MyCar.toLowerCase());
 
 
-    }
+    }}
 
-}
+
+
+
