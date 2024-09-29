@@ -1,14 +1,14 @@
-import java.util.Scanner;
+import java.util.Scanner;//Introducing Scanner utility for user input
 
 
 public class CalculateArea {
-    //creating a method called myarea to calculate the area of a triangle
-    public static int Myarea( int l, int w){//method 1 to calculate area of triangle
+    //A method  Myarea to calculate the area of a triangle
+    public static int Myarea( int l, int w){//method 1- calculate area of triangle
         return l*w;
     }
-    public static int Perimeter( int x, int y){// method 2, to calculate perimeter of triangle
+    public static int Perimeter( int x, int y){// method 2, - calculate perimeter of triangle
       //return x+y+z+h;
-        return 2 *(x+y); //returns perimeter by multiplying x+y by 2
+        return 2 *(x+y); //returns perimeter by multiplying (x+y) by 2
     }
     public static void main(String[] args) {
 
@@ -19,16 +19,16 @@ public class CalculateArea {
         System.out.println(" Your are welcome:\t" + name);
   //for(name.){
   //  System.out.println("no");
- // }
+
         System.out.println("Enter value for Length of the Triangle in cm: ");
         int l = myScanner.nextInt(); // taking the value of the length
         System.out.println("Enter value for width of the Triangle in cm: ");
 
         int w = myScanner.nextInt(); //taking the value of width
-        // int area= myarea;
+        // int area= Myarea;
         System.out.println("The area of a Triangle =:\n" +Myarea(l,w)+"cm\n"); //printing the input values from the user
 
-        double NewArea= (double)Myarea(l,w); // type casting the Area to double
+        double NewArea= (double)Myarea(l,w); // Type casting the Area of Triangle to double
                 System.out.println("The New type casted area of a Triangle =:\n" +NewArea+"cm\n");
 
     if (Myarea(l,w)<=100){ // using the <= operators
@@ -38,7 +38,7 @@ public class CalculateArea {
         System.out.println("\"good bye!!\"");
         System.exit(0);
         }
-    else if (Myarea(l,w)>100){ // if area is >1000 then it will jump to calculate perimeter of a triangle
+    else if (Myarea(l,w)>100){ // if area is >100 then it will jump to calculate perimeter of a triangle
         System.out.println("The area of a Triangle is greater than 100,\n Now switching to calculating Perimeter of Rectangle");
         System.out.println("Enter value for side 1");
          int x= myScanner.nextInt();
