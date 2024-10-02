@@ -53,6 +53,8 @@ public class CalculateArea {
 
         System.out.println("Thank you for using the system  !!");
         myScanner.close();
+
+        Myarea(x,y);
     }
 
         }

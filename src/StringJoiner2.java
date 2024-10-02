@@ -4,22 +4,26 @@ import java.util.Scanner;
 
 public class StringJoiner2 {
 
-
     public static void main(String[] args) {
 
         String myString = "Hello World";
-        String a ="hello";
-        String b ="java";
-         int sum;
-        System.out.println(a +"\n"+ b );
-   sum = a.length() + b.length();
+        String A ="hello";
+        String B ="java";
+        int summing;
+        String comp= "No";
 
-        System.out.println(sum);
-        System.out.println();
-System.out.println(a.toUpperCase().charAt(0)+"ello"+" " +b.toUpperCase().charAt(0)+"ava" );
+        //Sum of length of a and b
+       summing = A.length() + B.length();
+        System.out.println(summing);
 
-        //, b.toUpperCase().indexOf(0));
+//Determine if A is lexicographically larger than B
+summing = A.compareTo(B); //System.out.println(summing);  // A is smaller than B
+        if(summing< 0){
+            System.out.println(comp);
+        }else
+            System.out.println("Yes") ;
 
+System.out.println(A.toUpperCase().charAt(0)+ "ello "+" " +B.toUpperCase().charAt(0)+"ava");
 
 
     }
