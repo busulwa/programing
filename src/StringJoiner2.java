@@ -62,9 +62,15 @@ System.out.print("Working with substrings\n");
      String S=start+end;
         System.out.println(S+"\n" + S.length());
 
-//option 2
-//this
-        S = S.substring(3,7);
-        System.out.println("" + S);
+//*********************************************************
+//PA 303.3.1 - Practice Assignment - Strings
+Scanner  scanner = new Scanner(System.in);
+  int start;
+   int end;
+   String S = scanner.next();
+    //String S= "Helloworld";
+    start = scanner.nextInt();
+    end = scanner.nextInt();
+    System.out.println(S.substring(start,end));
     }
 }
