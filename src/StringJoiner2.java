@@ -37,7 +37,33 @@ B=B.toUpperCase().charAt(0)+ B.substring(1);
              System.out.println(A+ " " +B);
 
 
-// System.out.println(A.toUpperCase().charAt(0)+ "ello "+" " +B.toUpperCase().charAt(0)+"ava\n\n");
+// Option 2
+
+        Scanner sc=new Scanner(System.in);
+
+        /* Enter your code here. Print output to STDOUT. */
+        System.out.println(A.length() + B.length());
+
+        // Compare lexicographically
+        System.out.println(A.compareTo(B) > 0 ? "Yes" : "No");
+
+        // Capitalize first letter of each string
+        A = A.substring(0, 1).toUpperCase() + A.substring(1);
+        B = B.substring(0, 1).toUpperCase() + B.substring(1);
+
+        // Print the capitalized strings
+        System.out.println(A + " " + B);
+
+        sc.close();
+
+
+
+
+
+
+
+
+
 
 //*****************************************************************************
 
