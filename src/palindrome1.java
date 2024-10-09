@@ -1,7 +1,13 @@
+import java.util.Scanner;
+
 public class palindrome1 {
 
-    public static void main(String[] args) {}
-    String[] Axa1 = new String[]{"madam","dad","mom"};
+    public static void main(String[] args) {
 
-    for( int x= 0 ; x < Axa1.length ; x++)
+        Scanner checker = new Scanner(System.in);
+        System.out.println("Enter a word ");
+        String x = checker.nextLine().toLowerCase();
+
+//if()
+    }
 }

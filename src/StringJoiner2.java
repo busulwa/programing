@@ -91,12 +91,12 @@ System.out.print("Working with substrings\n");
 //*********************************************************
 //PA 303.3.1 - Practice Assignment - Strings
 Scanner  scanner = new Scanner(System.in);
-  int start;
-   int end;
-   String S = scanner.next();
+  int start1;
+   int end1;
+   String S1 = scanner.next();
     //String S= "Helloworld";
-    start = scanner.nextInt();
-    end = scanner.nextInt();
-    System.out.println(S.substring(start,end));
+    start1 = scanner.nextInt();
+    end1 = scanner.nextInt();
+    System.out.println(S.substring(start1,end1));
     }
 }
