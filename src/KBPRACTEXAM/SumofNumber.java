@@ -1,4 +1,4 @@
-package SumofStringsNumber;
+package KBPRACTEXAM;
 import java.util.Scanner;
 public class SumofNumber {
 
@@ -21,4 +21,8 @@ System.out.print(sum);
 
 }
 
-}
+
+
+    }
+
+

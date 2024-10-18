@@ -27,5 +27,8 @@ xxx.display();
 xxx.input(12);
 xxx.displayc();
 
+
+
+
     }
 }
